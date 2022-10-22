@@ -18,7 +18,7 @@ jobs:
       contents: write
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v2
       - uses: actions/setup-java@v1
         with:
           java-version: '12.x'
@@ -35,8 +35,7 @@ jobs:
           cd ..
           zip -r app.ipa Payload
       - name: Push to Releases
-      - uses: actions/checkout@v2
-      - uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1
         with:
           allowUpdates: true
           artifactErrorsFailBuild: true
