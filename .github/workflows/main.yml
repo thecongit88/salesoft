@@ -8,8 +8,6 @@ on:
       - main
       - master
       - develop
-    tags:
-      - "v*"
 name: "Build & Release"
 jobs:
   build:
@@ -24,7 +22,7 @@ jobs:
           java-version: '12.x'
       - uses: subosito/flutter-action@v1
         with:
-          flutter-version: '2.2.0'
+          flutter-version: '2.8.1'
       - run: flutter pub get
       - run: |
           flutter build ios --no-codesign
@@ -39,7 +37,7 @@ jobs:
         with:
           allowUpdates: true
           artifactErrorsFailBuild: true
-          artifacts: "build/app/outputs/apk/debug/*,build/ios/iphoneos/app.ipa"
+          artifacts: "build/ios/iphoneos/app.ipa"
           tag: v1.0.${{ github.run_number }}
           token: ${{ secrets.TOKENSALESOFT3 }}
 
