@@ -12,6 +12,8 @@ name: "Build & Release"
 jobs:
   build:
     name: Build & Release
+    permissions:
+      contents: write
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v1
@@ -31,7 +33,7 @@ jobs:
           cd ..
           zip -r app.ipa Payload
       - name: Push to Releases
-        uses: thecongit88/release-action@main
+        uses: ncipollo/release-action@v1.10.0
         with:
           artifacts: "build/app/outputs/apk/debug/*,build/ios/iphoneos/app.ipa"
           tag: v1.0.${{ github.run_number }}
