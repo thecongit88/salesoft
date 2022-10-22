@@ -1153,9 +1153,9 @@ class _KiemKhoPagePage extends State<KiemKhoPage> with AutomaticKeepAliveClientM
     );
 
     // set up the AlertDialog
-    AlertDialog alert = AlertDialog(
+    final AlertDialog alert = AlertDialog(
       actionsAlignment: MainAxisAlignment.center,
-      actionsPadding: const EdgeInsets.all(15),
+      actionsPadding: EdgeInsets.all(15),
       actions: [
         okButton,
         AppConstant.spaceVerticalSmallExtraExtraExtra,
