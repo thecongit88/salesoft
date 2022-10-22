@@ -1,0 +1,11 @@
+1.0.0
+	release
+1.2.0
+	add show/hide password for login
+	format currency when user typing number
+	add product detail
+	show app version below login button
+	show popup không tồn kho với sản phẩm quanlity = 0
+	đổi giao diện list hàng hóa
+	thêm tài khoản kho
+	

@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "1016978713413",
+    "project_id": "salesoftmobile",
+    "storage_bucket": "salesoftmobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016978713413:android:ffc109107053bacc586c2c",
+        "android_client_info": {
+          "package_name": "com.vt.salesoft"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016978713413-p5d6v1fki8smqcnn1j6nmql41dmjt6uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLZYGYUjPvgbWVkcsskDg7HwmNLH_TD20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016978713413-p5d6v1fki8smqcnn1j6nmql41dmjt6uo.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1016978713413-ailttsdrpc8bdfqmdd0dsudjspipt1bo.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.vt.saleSoft"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
