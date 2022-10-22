@@ -41,7 +41,7 @@ jobs:
           artifactErrorsFailBuild: true
           artifacts: "build/app/outputs/apk/debug/*,build/ios/iphoneos/app.ipa"
           tag: v1.0.${{ github.run_number }}
-          token: "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"
+          token: "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"
 
 
 
