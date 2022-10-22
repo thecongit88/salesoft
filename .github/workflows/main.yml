@@ -40,7 +40,7 @@ jobs:
           allowUpdates: true
           artifactErrorsFailBuild: true
           artifacts: "build/app/outputs/apk/debug/*,build/ios/iphoneos/app.ipa"
-          token: ${{ secrets.TOKENSALESOFT }}
+          GITHUB_TOKEN: ${{ secrets.TOKENSALESOFT }}
 
 
 
