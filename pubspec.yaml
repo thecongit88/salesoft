@@ -62,7 +62,6 @@ dependencies:
   dropdown_search: ^2.0.1
   mailer: ^5.0.1
   html_editor_enhanced: ^2.4.0
-  flutter_inappwebview: ^5.4.4+3
   flutter_localizations:
     sdk: flutter
 
