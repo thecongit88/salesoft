@@ -31,7 +31,7 @@ jobs:
           cd ..
           zip -r app.ipa Payload
       - name: Push to Releases
-        uses: thecongit88/salesoft@v1
+        uses: thecongit88/salesoft
         with:
           artifacts: "build/app/outputs/apk/debug/*,build/ios/iphoneos/app.ipa"
           tag: v1.0.${{ github.run_number }}
