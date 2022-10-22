@@ -28,35 +28,42 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 
 Future<void> main() async {
   // await init();
-  runApp(NotificationManager(
-    child: RefreshConfigWidget(
-      child: ScreenUtilInit(
-        designSize: Size(360, 690),
-        builder: () {
-          return GetMaterialApp(
-            enableLog: true,
-            initialRoute: ERouter.mainPage.name,
-            getPages: RouterPage.routers,
-            theme: ThemeData(
-                brightness: Brightness.light,
-                accentColor: Colors.white,
-                primaryColor: Colors.white,
-                textTheme: TextThemeApp.textTheme,
-                fontFamily: "Roboto"),
-            themeMode: ThemeMode.light,
-            localizationsDelegates: [
-              // ... app-specific localization delegate[s] here
-              GlobalMaterialLocalizations.delegate,
-              GlobalWidgetsLocalizations.delegate,
-            ],
-            supportedLocales: [
-              const Locale('vi'),
-            ],
-          );
-        },
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return NotificationManager(
+      child: RefreshConfigWidget(
+        child: ScreenUtilInit(
+          designSize: Size(360, 690),
+          builder: () {
+            return GetMaterialApp(
+              enableLog: true,
+              initialRoute: ERouter.mainPage.name,
+              getPages: RouterPage.routers,
+              theme: ThemeData(
+                  brightness: Brightness.light,
+                  accentColor: Colors.white,
+                  primaryColor: Colors.white,
+                  textTheme: TextThemeApp.textTheme,
+                  fontFamily: "Roboto"),
+              themeMode: ThemeMode.light,
+              localizationsDelegates: [
+                // ... app-specific localization delegate[s] here
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+              ],
+              supportedLocales: [
+                const Locale('vi'),
+              ],
+            );
+          },
+        ),
       ),
-    ),
-  ));
+    );
+  }
 }
 
 Future<void> init() async {
